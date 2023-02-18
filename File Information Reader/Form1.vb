@@ -14,6 +14,8 @@ Public Class Form1
             fileReader = My.Computer.FileSystem.OpenTextFileReader(openFileDialog.FileName)
 
             stringReader = fileReader.ReadLine()
+            
+            txtInsideFile.Text = ""
 
             ' Menampilkan isi file pada kotak teks
             While Not stringReader Is Nothing
